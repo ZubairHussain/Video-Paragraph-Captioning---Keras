@@ -31,7 +31,7 @@ class Multimodel_Layer(Layer):
 		W_v = k.dot(v,self.W)
 		
 		self.f = k.tanh(W_v + U_h + self.b)
-		print "f : ",k.int_shape(self.f)
+		#print "f : ",k.int_shape(self.f)
 		
 		return self.f
 		
